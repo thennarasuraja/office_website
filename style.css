@@ -1,0 +1,201 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    font-family: Arial, sans-serif;
+}
+.container-full {
+    height: 80vh;
+    width: 100%;
+    background-image: url(./building-illustration-download-in-svg-png-gif-file-formats--buildings-city-landscape-architecture-and-real-estate-pack-illustrations-3838725.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.container{
+    padding:0px 40px;
+    max-width: 100%;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    height: 80px;
+    justify-content: center;
+   align-items: center;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-weight: 500;
+}
+
+ul li a:hover {
+    color: rgb(78, 78, 211);
+    cursor: pointer;
+}
+.about{
+    max-width: full;
+    min-height: 400px;
+    background-color: rgb(53, 46, 46);
+    color: white;
+    font-weight: 800;
+    align-items: center;
+
+}
+h1{
+    font-weight: 600;
+     font-size: 40px;
+    color: rgb(116, 110, 110);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.section-1{
+    max-width: 100%;
+    text-align: center;
+
+}
+.section-2{
+        display: grid;             
+        grid-template-columns: 1fr 1fr; 
+        align-items: center;
+    }
+
+.section-2 h2:hover{
+    color: #3f78e0;
+}
+.section-2 a{
+    display: grid;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #383838;
+    text-decoration: none;
+}
+.development-img{
+    display: flex;
+    justify-content: center;    
+
+}
+.development-img img{
+    width: 80%;
+    height: 600px;
+}
+.technology{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.section-3{
+    display: grid;             
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+}
+
+.section-3 h2:hover{
+    color: #3f78e0;
+}
+.section-3 a{
+    display: grid;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: #383838;
+    text-decoration: none;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 40px;
+}
+footer{
+    color: #CACACA;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #1f1e1e;
+    border-radius: 10px;
+
+}
+h3{
+    color: white;
+    font-weight: 900;
+}
+a:hover{
+    color: #3f78e0;
+}
+
+
+
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    ul {
+        flex-wrap: wrap; 
+        justify-content: flex-start;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    ul li a {
+        padding: 10px; 
+    }
+    .section-2{
+        display: grid;             
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-height: 40px;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+    .section-2{
+        display: grid;             
+        grid-template-columns: 1fr; 
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .section-2 a{
+        font-size: 10px;
+        color: #383838;
+        word-wrap: break-word; 
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+    }
+    .section-3{
+        display: grid;             
+        grid-template-columns: 1fr; 
+    }
+    .section-3 a{
+        font-size: 10px;
+        color: #383838;
+        word-wrap: break-word; 
+    }
+    h1{
+        font-weight: 600;
+         font-size: 20px;
+        color: rgb(116, 110, 110);
+    }
+   
+    .container-full{
+        height: 200px;
+    }
+    header{
+        height: 80vh;
+    }
+}
